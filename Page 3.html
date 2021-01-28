@@ -4,50 +4,30 @@
 	<metahttp-equiv="content-type"content="text/html;charset=utf-8"/>
 </head>
 <body>
-	<form>
-		<div align=center>
-			<label for="name"> Votre pseudo :</label>
-			<input type="text" name="username">
-		</div>
-		<div align=center>
-			<label for="mdp"> Votre mot de passe :</label>
-			<input type="text" name="password">
-		</div>
-		<div align=center> 
-			<label for="verifmdp"> Ressaisir votre mot de passe :</label>
-			<input type="text" name="verif_password">
-		</div>
-		<div align=center>
-			<label for="OsFav">OS préféré : </label>
-			<input type="radio" name="FavOS" value="Windows XP"> WindowsXP <br>
+	<table>
+
+<tr><td>Votre pseudo : </td><td><input type="text" name="username"></td></tr>
+<tr><td>Votre mot de passe : </td><td><input type="text" name="password"></td></tr>
+<tr><td>Ressaisir votre mot de passe : </td><td><input type="text" name="verif_password"></td></tr>
+<tr><td>OS préféré : </td><td><input type="radio" name="FavOS" value="Windows XP"> WindowsXP <br>
 			<input type="radio" name="FavOS" value="Windows Vista"> WindowsVista <br>
 			<input type="radio" name="FavOS" value="MacOs X"> MacOs X<br>
 			<input type="radio" name="FavOS" value="Linux"> Linux<br>
-			<input type="radio" name="FavOS" value="Autre"> Autre<br>
-		</div >
-		<div align=center>
-			<label for="Possesion">Vous possédez :</label>
+			<input type="radio" name="FavOS" value="Autre"> Autre<br></td></tr>
+<tr><td>Vous posséder : </td><td>
 			<input type="checkbox"> Un ordinateur de bureau  <br>
 			<input type="checkbox"> Un portable <br>
 			<input type="checkbox"> Un netbook <br>
-			<input type="checkbox"> Une tablette (Pad) <br>
-		</div>
-		<div align=center>
-<label for="Work">Votre profession :</label>
-
-<select name="pets" id="pet-select">
+			<input type="checkbox"> Une tablette (Pad) <br></td></tr>
+<tr><td>Votre profession : </td><td><select name="pets" id="pet-select">
     <option value="">--Please choose an option--</option>
     <option value="chomeur">Chômeur</option>
     <option value="etudiant">Etudiant</option>
     <option value="Fonctionnaire">Fonctionnaire</option>
     <option value="Prive">Privé</option>
     <option value="Retraite">Retraite</option>
-</select>
-		</div>
-		<div class="button" align=center>
-        	<button type="submit">S'inscrire !</button>
-    	</div>
+</select></td></tr>
 
-	</form>
+</table>
 </body>
 </html>
