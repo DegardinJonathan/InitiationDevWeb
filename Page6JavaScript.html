@@ -1,0 +1,39 @@
+<script>
+function afficher(){
+if (document.getElementById("pays").value == "France"){
+	document.getElementById("capitale").value = "Paris";
+}
+else{
+	if (document.getElementById("pays").value == "Italie"){
+		document.getElementById("capitale").value = "Rome";
+	}
+	else {
+		if (document.getElementById("pays").value == "Allemagne"){
+			document.getElementById("capitale").value = "Berlin";
+		}
+		else{
+			document.getElementById("capitale").value = "Choisissez un des pays ci-dessus";
+		}
+	}
+}
+}
+
+function afficherCopie(){
+var saisie =document.getElementById("pays").value;
+document.getElementById("copie").value=saisie ;
+}
+
+</script>
+
+<div align="center">
+<form>
+<select id="pays" class="form-control" onclick="afficherCopie()">
+<option value="France">France</option>
+<option value="Italie">Italie</option>
+<option value="Allemagne">Allemagne</option>
+<input type="button" id="bouton" value="Afficher" size="30" onclick="afficher()"><br><br>
+<input type="text" id="copie"  size="30" value="">
+<input type="text" id="capitale"  size="30" value="">
+</form>
+</div>
+</html>
