@@ -1,0 +1,19 @@
+<script>
+
+function afficherCopie(){
+var saisie =document.getElementById("original").value;
+document.getElementById("copie").value=saisie ;
+}
+
+</script>
+
+<div align="center">
+<form>
+<input type="text" id="original" value=""><br>
+<input type="button" id="bouton" value="Afficher" size="30" onclick="afficherCopie()"><br><br>
+</form>
+<form>
+<input type="text" id="copie" value="">
+</form>
+</div>
+</html>
