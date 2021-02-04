@@ -1,0 +1,14 @@
+<script type="text/javascript">
+	function testVar(variable){
+		var variable = variable;
+		if (variable < 10){
+			alert("Inférieure à 10");
+		} 
+		else{
+			alert("Supérieur à 10");
+		}
+	}
+</script>
+<form>
+	<input type="text" name="valeur">
+	<button onclick="testVar(valeur.value)"> Test </button>

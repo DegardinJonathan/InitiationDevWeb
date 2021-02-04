@@ -1,0 +1,13 @@
+<script type="text/javascript">
+	function OnClick(valeur){
+		var valeur= valeur;
+		alert("Vous avez saisis ce message : " + valeur);
+	}
+	function OnMouseOver(){
+		alert("Vous venez de passer le lien");
+	}
+</script>
+<form>
+	<input type="text" name="valeur">
+	 <button onclick="OnClick(valeur.value)">Click me</button> 
+	 <a href="Page4JavaScript.html" onmouseover="OnMouseOver()">Lien</a>
