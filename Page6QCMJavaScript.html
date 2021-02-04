@@ -1,0 +1,73 @@
+<script>
+function CalculResult(){
+	var scoreFinal = 0;
+	var choix = document.querySelector('input[name="Question1"]:checked').value;
+	if (choix == "10"){
+		scoreFinal = scoreFinal+1;
+	}
+	choix = document.querySelector('input[name="Question2"]:checked').value;
+	if (choix == "15"){
+		scoreFinal = scoreFinal+1;
+	}
+	choix = document.querySelector('input[name="Question3"]:checked').value;
+	if (choix == "25"){
+		scoreFinal = scoreFinal+1;
+	}
+	choix = document.querySelector('input[name="Question4"]:checked').value;
+	if (choix == "24"){
+		scoreFinal = scoreFinal+1;
+	}
+	choix = document.querySelector('input[name="Question5"]:checked').value;
+	if (choix == "144"){
+		scoreFinal = scoreFinal+1;
+	}
+	choix = document.querySelector('input[name="Question6"]:checked').value;
+	if (choix == "2"){
+		scoreFinal = scoreFinal+1;
+	}
+	choix = document.querySelector('input[name="Question7"]:checked').value;
+	if (choix == "24"){
+		scoreFinal = scoreFinal+1;
+	}
+	choix = document.querySelector('input[name="Question8"]:checked').value;
+	if (choix == "5"){
+		scoreFinal = scoreFinal+1;
+	}
+	document.getElementById("Score").value = scoreFinal + "/8"
+}
+
+</script>
+
+<div align="center">
+<form>
+	<table>
+	<tr><td>5+5 = ? 
+	<td><input type="radio" name="Question1" value="12"> 12 </td>
+	<td><input type="radio" name="Question1" value="10"> 10 </td></tr>
+	<tr><td>10+5 = ? 
+	<td><input type="radio" name="Question2" value="20"> 20</td> 
+	<td><input type="radio" name="Question2" value="15"> 15</td></tr>
+	<tr><td>5*5 = ? 
+	<td><input type="radio" name="Question3" value="30"> 30 </td>
+	<td><input type="radio" name="Question3" value="25"> 25</td></tr>
+	<tr><td> 12 + 12 = ? 
+	<td><input type="radio" name="Question4" value="24"> 24</td>
+	<td><input type="radio" name="Question4" value="1212"> 1212</td></tr>
+	<tr><td>12*12 = ? 
+	<td><input type="radio" name="Question5" value="132"> 132</td>
+	<td><input type="radio" name="Question5" value="144"> 144</td></tr>
+	<tr><td>1+1 = ? 
+	<td><input type="radio" name="Question6" value="2"> 2</td>
+	<td><input type="radio" name="Question6" value="11"> 11</td></tr>
+	<tr><td>18+6 = ? 
+	<td><input type="radio" name="Question7" value="24"> 24</td>
+	<td><input type="radio" name="Question7" value="186"> 186</td></tr>
+	<tr><td>5+0 = ? 
+	<td><input type="radio" name="Question8" value="0"> 0</td>
+	<td><input type="radio" name="Question8" value="5"> 5</td></tr></table>
+	<input type="button" id="bouton" value="Afficher" size="30" onclick="CalculResult()">
+	<input type="text" id="Score" value="">
+
+</form>
+</div>
+</html>
